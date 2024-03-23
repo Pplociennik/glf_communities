@@ -10,10 +10,15 @@ import lombok.Getter;
  *
  * @author Created by: Pplociennik at 23.03.2024 14:54
  */
+@Schema(
+        name = "CreateCommunity Data Transfer Object",
+        description = "A representation of the data necessary for the new Community creation process." )
 @Getter
 @EqualsAndHashCode( callSuper = true )
 public class CreateCommunityDto extends BaseAbstractExtendableDto {
 
-    @Schema( description = "A title of the community.", example = "Test Community." )
+    @Schema(
+            description = "A title of the community.",
+            example = "Test Community." )
     private String title;
 }
