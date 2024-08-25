@@ -9,7 +9,7 @@ spring:
 
   config:
     import:
-      - "configserver:http://configserver:8071/"
+      - "configserver:http://localhost:8071/"
       - "classpath:buildInfo.yml"
       - "classpath:buildEnvInfo.yml"
 
