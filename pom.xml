@@ -13,7 +13,13 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <name>glf-communities</name>
-    <description>glf-communities</description>
+    <description>Communities service for Goaleaf server project.</description>
+    <developers>
+        <developer>
+            <name>Pplociennik</name>
+            <url>https://github.com/Pplociennik</url>
+        </developer>
+    </developers>
 
     <properties>
         <java.version>17</java.version>
@@ -60,17 +66,16 @@
             <version>${version.pp-modinfo}</version>
         </dependency>
 
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-
         <!--   Micrometer     -->
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-registry-prometheus</artifactId>
         </dependency>
-
         <!--   Open Telemetry     -->
         <dependency>
             <groupId>io.opentelemetry.javaagent</groupId>
@@ -83,6 +88,7 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- Spring Cloud dependencies -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -154,6 +160,7 @@
             </dependencies>
         </profile>
         <!-- 'prod' profile -->
+        <!-- TODO: This is a placeholder. No prod environment yet. -->
         <profile>
             <id>prod</id>
             <activation>
