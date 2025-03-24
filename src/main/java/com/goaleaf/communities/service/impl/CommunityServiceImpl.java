@@ -1,6 +1,6 @@
 package com.goaleaf.communities.service.impl;
 
-import com.github.pplociennik.commons.exc.ResourceNotFoundException;
+import com.github.pplociennik.commons.exc.resources.ResourceNotFoundException;
 import com.goaleaf.communities.dto.CommunityDto;
 import com.goaleaf.communities.dto.CreateCommunityDto;
 import com.goaleaf.communities.entity.Community;
