@@ -27,7 +27,7 @@ class CommunityController {
         communityService.createNewCommunity( aCreateCommunityDto );
         return ResponseEntity
                 .status( HttpStatus.CREATED )
-                .body( new ResponseDto( "201", "Community created successfully." ) );
+                .body( null );
     }
 
     @GetMapping( "/community" )
@@ -43,7 +43,7 @@ class CommunityController {
         communityService.updateCommunity( aCommunityDto );
         return ResponseEntity
                 .status( HttpStatus.OK )
-                .body( new ResponseDto( "200", "Community updated successfully." ) );
+                .body( null );
     }
 
     @DeleteMapping( path = "/delete" )
@@ -51,7 +51,7 @@ class CommunityController {
         communityService.deleteCommunity( aIdentifier );
         return ResponseEntity
                 .status( HttpStatus.OK )
-                .body( new ResponseDto( "200", "Community deleted successfully." ) );
+                .body( null );
     }
 
 
